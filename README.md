@@ -54,7 +54,7 @@ pip install -r requirements.txt
 - ```
   http://51.20.249.29:8501/
   ```
-Usage
+## *Usage*
 
 1. Enter two questions in the input fields.
 
@@ -68,7 +68,7 @@ Usage
 
 The underlying machine learning model is trained on Quora question pairs, and it evaluates the similarity between the input questions using text processing techniques.
 
-Model Information
+## *Model Information*
 
 The model is built using the following components:
 
@@ -79,7 +79,7 @@ Machine Learning Model: A classification model (saved as model.pkl) is trained t
 
 The model uses NLP techniques to preprocess the data, including stopword removal (using stopwords.pkl) and feature extraction.
 
-Future Improvements
+## *Future Improvements*
 
 Implement more advanced NLP techniques, such as TF-IDF, word embeddings (Word2Vec, GloVe), and BERT.
 
@@ -90,7 +90,7 @@ Add more robust error handling and user input validation to the app.
 Explore additional deployment options like containerization with Docker.
 
 
-License
+## License
 
 This project is licensed under the MIT License. You are free to use, modify, and distribute the code with appropriate attribution.
 
