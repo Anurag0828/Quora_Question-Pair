@@ -23,7 +23,6 @@ This project provides a web interface to detect whether two questions are duplic
 - Preprocessing of input text data using stopword removal and vectorization.
 - Use of a pre-trained machine learning model to predict whether two input questions are duplicates.
 - Live deployment on AWS EC2 for easy access.
-- 
 ## *Setup Instructions*
 
 ### *1. Clone the Repository*
@@ -36,14 +35,62 @@ git clone https://github.com/Anurag0828/Quora_Question-Pair.git
 Navigate to the project directory and create a virtual environment:
 ```bash
 cd Quora_Question-Pair
-```
-```
 python3 -m venv myenv
 ```
-*Step 3: Install Dependencies*: Instructs the user to install required packages using pip.
-- *Step 4: Access the Application on AWS EC2*: Guides the user to access the deployed app on AWS EC2 and mentions configuring security group settings.
-- *Usage*: Explains how to use the web app after it’s up and running.
-- *Model Information*: Gives an overview of the components used in the machine learning model.
-- *Future Improvements*: Lists potential areas for enhancing the app and model.
-- *License*: Provides details about the licensing of the project.
+On macOS/Linux:
+```
+source myenv/bin/activate
+```
+On Windows:
+```
+myenv\Scripts\activate
+```
+*Step 3: Install Dependencies*: 
+```
+pip install -r requirements.txt
+```
+- *Step 4: Access the Application on AWS EC2*:
+- The application  is deployed and hosted on aws EC2 instance. You can access the live application by visiting the following url
+- ```
+  http://51.20.249.29:8501/
+  ```
+Usage
+
+1. Enter two questions in the input fields.
+
+
+2. Click the "Predict" button.
+
+
+3. The app will display whether the questions are duplicates or not.
+
+
+
+The underlying machine learning model is trained on Quora question pairs, and it evaluates the similarity between the input questions using text processing techniques.
+
+Model Information
+
+The model is built using the following components:
+
+Text Vectorization: The CountVectorizer (saved as cv.pkl) converts the input text data into numerical format.
+
+Machine Learning Model: A classification model (saved as model.pkl) is trained to predict whether two questions are duplicates.
+
+
+The model uses NLP techniques to preprocess the data, including stopword removal (using stopwords.pkl) and feature extraction.
+
+Future Improvements
+
+Implement more advanced NLP techniques, such as TF-IDF, word embeddings (Word2Vec, GloVe), and BERT.
+
+Improve model accuracy by experimenting with different machine learning algorithms.
+
+Add more robust error handling and user input validation to the app.
+
+Explore additional deployment options like containerization with Docker.
+
+
+License
+
+This project is licensed under the MIT License. You are free to use, modify, and distribute the code with appropriate attribution.
 
