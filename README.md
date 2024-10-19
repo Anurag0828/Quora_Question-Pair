@@ -31,12 +31,19 @@ Clone the GitHub repository to your local machine using the command:
 
 ```bash
 git clone https://github.com/Anurag0828/Quora_Question-Pair.git
-
+```
 ### *2. Set Up Virtual Environment*
 Navigate to the project directory and create a virtual environment:
-
 ```bash
-cd duplicate-question-detection
+cd Quora_Question-Pair
+```
+```
 python3 -m venv myenv
-
+```
+*Step 3: Install Dependencies*: Instructs the user to install required packages using pip.
+- *Step 4: Access the Application on AWS EC2*: Guides the user to access the deployed app on AWS EC2 and mentions configuring security group settings.
+- *Usage*: Explains how to use the web app after it’s up and running.
+- *Model Information*: Gives an overview of the components used in the machine learning model.
+- *Future Improvements*: Lists potential areas for enhancing the app and model.
+- *License*: Provides details about the licensing of the project.
 
