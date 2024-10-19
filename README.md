@@ -32,3 +32,11 @@ Clone the GitHub repository to your local machine using the command:
 ```bash
 git clone https://github.com/Anurag0828/Quora_Question-Pair.git
 
+### *2. Set Up Virtual Environment*
+Navigate to the project directory and create a virtual environment:
+
+```bash
+cd duplicate-question-detection
+python3 -m venv myenv
+
+
